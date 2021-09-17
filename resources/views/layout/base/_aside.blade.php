@@ -97,7 +97,7 @@
                     'submenu' => [
                         [
                             'title' => 'Product Category',
-                            'page' => '/users'
+                            'page' => '/productcategories'
                         ],
                         [
                             'title' => 'Products',
