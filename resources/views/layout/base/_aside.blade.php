@@ -114,7 +114,7 @@
                     'submenu' => [
                         [
                             'title' => 'Menu Category',
-                            'page' => '/users'
+                            'page' => '/menucategories'
                         ],
                         [
                             'title' => 'Menu',

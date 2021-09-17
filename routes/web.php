@@ -8,6 +8,7 @@ Auth::routes();
 Route::get('/', 'DashboardController@index')->name('dashboard');
 Route::resource('users','UserController');
 Route::resource('productcategories','ProductcategoryController');
+Route::resource('menucategories','MenucategoryController');
 
 // Quick search dummy route to display html elements in search dropdown (header search)
 Route::get('/quick-search', 'DashboardController@quickSearch')->name('quick-search');
