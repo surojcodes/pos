@@ -48,7 +48,11 @@ class MenucategoryController extends Controller
         if(!$menucategory){
             abort(404);
         }
-        //TODO : delete all menu items and not let delete if already used
+        $menus  = $menucategory->menus;
+        foreach($menus as $menu){
+            $menu->delete();
+        }
+        //TODO :not let delete if already used
         $menucategory->delete();
         return redirect('/menucategories')->with('success','Menu category Deleted!');
     }

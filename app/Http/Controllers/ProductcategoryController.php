@@ -49,7 +49,11 @@ class ProductcategoryController extends Controller
         if(!$productCategory){
             abort(404);
         }
-        //TODO : delete all products and not let delete if already used
+        $products  = $productCategory->products;
+        foreach($products as $product){
+            $product->delete();
+        }
+        //TODO : not let delete if already used
         $productCategory->delete();
         return redirect('/productcategories')->with('success','Product category Deleted!');
     }
