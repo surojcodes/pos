@@ -100,7 +100,7 @@
                             'page' => '/products'
                         ],
                           [
-                            'title' => 'Add a Prdoduct',
+                            'title' => 'Add a Product',
                             'page' => '/products/create'
                         ],
                     ],
@@ -112,12 +112,12 @@
                     'bullet' => 'dot',
                     'submenu' => [
                         [
-                            'title' => 'Menu Category',
-                            'page' => '/menucategories'
+                            'title' => 'Menu Items',
+                            'page' => '/menus'
                         ],
                         [
-                            'title' => 'Menu',
-                            'page' => '/users'
+                            'title' => 'Add Menu Items',
+                            'page' => '/menus/create'
                         ],
                     ],
                 ];

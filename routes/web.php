@@ -10,6 +10,7 @@ Route::resource('users','UserController');
 Route::resource('productcategories','ProductcategoryController');
 Route::resource('menucategories','MenucategoryController');
 Route::resource('products','ProductController');
+Route::resource('menus','MenuController');
 
 
 // Quick search dummy route to display html elements in search dropdown (header search)
