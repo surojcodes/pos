@@ -96,16 +96,15 @@
                     'bullet' => 'dot',
                     'submenu' => [
                         [
-                            'title' => 'Product Category',
-                            'page' => '/productcategories'
-                        ],
-                        [
                             'title' => 'Products',
-                            'page' => '/users'
+                            'page' => '/products'
+                        ],
+                          [
+                            'title' => 'Add a Prdoduct',
+                            'page' => '/products/create'
                         ],
                     ],
                 ];
-
                 $menus =  [
                     'title' => 'Menu',
                     'icon' => 'media/svg/icons/Cooking/Dinner.svg',
@@ -122,6 +121,23 @@
                         ],
                     ],
                 ];
+                 $settings =  [
+                    'title' => 'Settings',
+                    'icon' => 'media/svg/icons/General/Settings-2.svg',
+                    'root' => true,
+                    'bullet' => 'dot',
+                    'submenu' => [
+                        [
+                            'title' => 'Product Category',
+                            'page' => '/productcategories'
+                        ],
+                        [
+                            'title' => 'Menu Category',
+                            'page' => '/menucategories'
+                        ]
+                    ],
+                ];
+
                 $dashboard =  [
                     'title' => 'Dashboard',
                     'root' => true,
@@ -131,7 +147,7 @@
                 ];
               
                 $menu = [
-                    'items' => [$dashboard,$purchases,$sales,$products,$menus]
+                    'items' => [$dashboard,$purchases,$sales,$products,$menus,$settings]
                 ];
                 // array_push($menu['items'],$purchases);
                 // array_push($menu['items'],$sales);
