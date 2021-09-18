@@ -14,6 +14,7 @@
             <link href="{{ config('layout.self.rtl') ? asset(Metronic::rtlCssPath($theme)) : asset($theme) }}" rel="stylesheet" type="text/css"/>
         @endforeach
         <link rel="stylesheet" href="{{asset('css/datatables.min.css')}}">
+        <link rel="stylesheet" href="{{asset('css/nepali.datepicker.min.css')}}">
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
         @yield('styles')
@@ -58,6 +59,7 @@
             <script src="{{ asset($script) }}" type="text/javascript"></script>
         @endforeach
         <script src="{{asset('js/datatables.min.js')}}"></script>
+        <script src="{{asset('js/nepali.datepicker.min.js')}}"></script>
         <script>
            $('#dataTable').DataTable({
                 "order": [],
@@ -76,4 +78,3 @@
         @yield('scripts')
     </body>
 </html>
-

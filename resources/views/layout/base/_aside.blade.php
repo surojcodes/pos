@@ -55,11 +55,11 @@
                     'submenu' => [
                         [
                             'title' => 'My Purchases',
-                            'page' => '/users'
+                            'page' => '/purchases'
                         ],
                         [
                             'title' => 'Add a Purchase',
-                            'page' => '/users'
+                            'page' => '/purchases/create'
                         ],
                         [
                             'title' => 'Purchase Report',

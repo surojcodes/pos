@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Product;
 use App\Productcategory;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Str;
 
 class ProductController extends Controller
@@ -55,5 +56,10 @@ class ProductController extends Controller
         if(!$product) abort(404);
         $product->delete();
         return redirect('/products')->with('success','Product deleted!');
+    }
+    public function getProducts($id){
+        $productCategory = Productcategory::find($id);
+        $products = $productCategory->products;
+        return Response::json($products);
     }
 }
